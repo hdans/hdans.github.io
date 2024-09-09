@@ -1,21 +1,31 @@
 body {
-    background-color: #fffacd; 
+    background-color: #fffacd;
     font-family: Verdana, sans-serif;
-    margin: 30px 30px 30px 40px; 
-    height: calc(100vh - 60px); 
+    margin: 30px 30px 30px 40px;
+    height: calc(100vh - 60px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.back-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 h1 {
-    color: blue; 
+    color: blue;
     font-size: 35px;
     text-align: center;
 }
 
 p, li {
-    color: blue; 
+    color: blue;
 }
 
 table {
@@ -55,4 +65,9 @@ td ul {
     padding: 10px 15px;
     border-radius: 20px;
     text-decoration: none;
+}
+
+.centered-button {
+    text-align: center;
+    margin-top: 20px;
 }
