@@ -1,56 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #efecf2;
     margin: 0;
+    padding: 0;
 }
 
-.calculator {
-    background-color: #f8f7f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-input[type="number"], input[readonly] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1.2em;
-    text-align: center;
-}
-
-button {
-    width: 60px;
-    padding: 10px;
-    margin: 10px 5px;
-    border: none;
+header {
     background-color: #a66fd7;
     color: #f8f7f9;
-    font-size: 1.2em;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f7f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #343a40;
+    border-bottom: 2px solid #a66fd7;
+    padding-bottom: 10px;
+}
+
+.form-group, .result-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.radio-group {
+    display: flex;
+    gap: 5px; 
+    margin-bottom: 5px; 
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    font-family: Arial, sans-serif;
+    border: none;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.back-button {  
-    display: block;
-    margin: 20px auto 0;
-    width: 100px;
-    text-align: center;
+.btn-kirim {
+    background-color: #a66fd7; 
+    color: white;
+    font-size: 18px; 
+    font-weight: bold;
+    padding: 15px 35px; 
 }
 
-button:hover {
-    background-color: #8b57b8;
+.btn-kirim:hover {
+    background-color: #9057c5; 
+    transform: scale(1.05); 
 }
+
+.btn-kembali {
+    background-color: #efefef; 
+    color: #333;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.btn-kembali:hover {
+    background-color: #ddd; 
+    transform: scale(1.02); 
+}
+
+.result-section {
+    margin-top: 20px;
+}
+
+.result-group p {
+    padding: 10px;
+    background-color: #f8f7f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
