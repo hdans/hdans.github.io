@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Example</title>
+</head>
+<body>
+    <h1>Selamat Datang di Website Sederhana</h1>
+    <div id="greeting"></div>
+    <form id="nameForm">
+        <label for="name">Masukkan Nama Anda:</label>
+        <input type="text" id="name" name="name">
+        <button type="button" onclick="setCookie()">Simpan Nama</button>
+    </form>
+
+    <script>
+        // Function untuk menyimpan cookies
+        function setCookie() {
+            let name = document.getElementById("name").value;
+            if (name !== "") {
+                document.cookie = "username=" + name + ";path=/";
+                document.getElementById("greeting").innerText = "Hai, " + name + "!";
+            }
+        }
+
+        // Function untuk mendapatkan cookies
+        function getCookie(name) {
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let cookiesArray = decodedCookie.split(';');
+            for (let i = 0; i < cookiesArray.length; i++) {
+                let cookie = cookiesArray[i].trim();
+                if (cookie.indexOf(name + "=") == 0) {
+                    return cookie.substring((name.length + 1), cookie.length);
+                }
+            }
+            return "";
+        }
+
+        // Cek jika ada cookie tersimpan dan tampilkan
+        window.onload = function () {
+            let username = getCookie("username");
+            if (username !== "") {
+                document.getElementById("greeting").innerText = "Hai, " + username + "!";
+            }
+        }
+    </script>
+</body>
+</html>
