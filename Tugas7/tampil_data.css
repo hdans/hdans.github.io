@@ -1,0 +1,76 @@
+body, h1, table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f7f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #a66fd7;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #8b57b8;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f7f9;
+}
+
+tr:hover {
+    background-color: #ece8f1;
+}
+
+button {
+    background-color: #c34c64;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b33b54;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}

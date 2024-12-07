@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f7f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container1 {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #8b57b8;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #8b57b8;
+    color: white;
+}
+
+td {
+    background-color: #f8f7f9;
+}
+
+tr:hover td {
+    background-color: #ece8f1;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit {
+    background-color: #a66fd7;
+    color: white;
+}
+
+.delete {
+    background-color: #c34c64;
+    color: white;
+}
+
+.input, .logout {
+    background-color: #8b57b8;
+    color: white;
+    padding: 12px;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+input a, .logout a, .edit a, .delete a {
+    color: white;
+    text-decoration: none;
+}
+
+button a:hover {
+    text-decoration: underline;
+}
+
+.input:hover, .logout:hover {
+    opacity: 0.9;
+}

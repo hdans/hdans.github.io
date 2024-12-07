@@ -1,0 +1,85 @@
+body, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f7f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    width: 420px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #a66fd7;
+}
+
+table.form {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 10px 0;
+    font-weight: bold;
+    color: #8b57b8;
+}
+
+td {
+    padding: 10px 0;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f8f7f9;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #a66fd7;
+    outline: none;
+}
+
+button.tambah {
+    background-color: #8b57b8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button.tambah:hover {
+    background-color: #a66fd7;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
